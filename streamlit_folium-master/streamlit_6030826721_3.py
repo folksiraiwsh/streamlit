@@ -16,7 +16,7 @@ import pydeck as pdk
 st.title("Homework streamlit_6030826721")
 st.markdown("select date and time")
 select_date = st.sidebar.selectbox('Date :' , ['2019/01/01','2019/01/02','2019/01/03','2019/01/04','2019/01/05'])
-#-- เลือกข้อมูบที่จะใช้
+
 if select_date=='2019/01/01':
     DATA_URL = ("https://raw.githubusercontent.com/folksiraiwsh/streamlit/master/data/20190101.csv")
 elif select_date=='2019/01/02':
@@ -119,7 +119,7 @@ st.altair_chart(alt.Chart(chart_data)
     ), use_container_width=True)
 
 
-# In[ ]:
+
 
 
 
